@@ -82,8 +82,8 @@ public class App {
         AverageAge<Teacher> teacherAverageAge = new AverageAge<>(teachers, "учителей");
         teacherAverageAge.printAverageAge();
 
-        AverageAge<Emploee> staffAverageAge = new AverageAge<>(Emploee, "работников");
-        staffAverageAge.printAverageAge();
+        AverageAge<Emploee> emploeeAverageAge = new AverageAge<>(Emploee, "работников");
+        emploeeAverageAge.printAverageAge();
 
             
         //System.out.println(u1);
