@@ -13,12 +13,12 @@ public class AverageAge<T extends User> {
         this.userType = userType;
     }
 
-    public double calculateAverageAge() {
-        double sumAge = 0;
+    public int calculateAverageAge() {
+        int sumAge = 0;
         for (T user : userList) {
             sumAge += user.getAge();
         }
-        return userList.isEmpty() ? 0 : sumAge / userList.size();
+        return userList.isEmpty() ? 0 : Math.round((float) sumAge / userList.size());
     }
 
     public void printAverageAge() {
