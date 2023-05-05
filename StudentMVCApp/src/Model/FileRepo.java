@@ -81,7 +81,7 @@ public class FileRepo implements iGetModel {
             Student student = it.next();
             if (student.getStudentID() == id) {
                 it.remove();
-                saveAllStudentToFile(); // save updated list of students to file
+                saveAllStudentToFile();
                 return true;
             }
         }
