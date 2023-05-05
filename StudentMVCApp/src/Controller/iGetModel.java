@@ -1,0 +1,11 @@
+package Controller;
+
+import java.util.List;
+import Model.Student;
+
+public interface iGetModel {
+    public List<Student> getAllStudent();
+    public boolean deleteStudent(Long id);
+    public void addStudent(Student student);
+
+}
